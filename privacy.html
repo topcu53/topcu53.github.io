@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova - Gizlilik Politikası</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-indigo-600">Nova</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-slate-600 hover:text-indigo-600 font-medium">Ana Sayfa</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <h1 class="text-4xl font-bold mb-4">Nova — Gizlilik Politikası</h1>
+        <p class="text-slate-500 mb-8">Son güncelleme: 18 Haziran 2026</p>
+
+        <div class="prose prose-slate max-w-none text-slate-700 space-y-6">
+            <p>Nova (“uygulama”), hamilelik ve bebek takibi sunan bir mobil uygulamadır. Bu politika, hangi verileri topladığımızı, nasıl kullandığımızı ve haklarınızı açıklar.</p>
+            <p class="p-4 bg-orange-50 border-l-4 border-orange-400 text-orange-800">
+                <strong>Önemli:</strong> Nova tıbbi cihaz veya sağlık hizmeti sağlayıcısı değildir. Uygulamadaki bilgiler yalnızca bilgilendirme amaçlıdır; sağlık kararlarınız için mutlaka doktorunuza danışın.
+            </p>
+
+            <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">1. Veri Sorumlusu</h2>
+            <p>Nova uygulamasının geliştiricisi veri sorumlusudur.<br>Gizlilik talepleri için: btopcu@hotmail.com.tr</p>
+
+            <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">2. Topladığımız Veriler</h2>
+            <ul class="list-disc pl-6 space-y-2">
+                <li><strong>Hesap bilgileri:</strong> e-posta adresi, şifre (Supabase Auth tarafından güvenli şekilde işlenir), tercih edilen dil.</li>
+                <li><strong>Profil:</strong> adınız, ebeveyn rolü (anne/baba/bakıcı).</li>
+                <li><strong>Çocuk profilleri:</strong> bebek veya hamilelik adı, cinsiyet, tahmini doğum tarihi, doğum tarihi, doğum hikayesi notları ve ölçüleri.</li>
+                <li><strong>Sağlık ve bakım kayıtları:</strong> hamilelik takibi (kilo, randevu, ultrason vb.), bebek bakım logları, büyüme, aşı, ilaç hatırlatıcıları, hastalık günlüğü, diş takibi, kilometre taşları.</li>
+                <li><strong>Medya:</strong> yüklediğiniz fotoğraf ve videolar (anılar, ultrason, profil fotoğrafı).</li>
+                <li><strong>Aile erişimi:</strong> paylaştığınız erişim kodları ve bakıcı oturum bilgileri.</li>
+                <li><strong>Topluluk:</strong> paylaştığınız gönderiler ve yorumlar (bu özelliği kullanırsanız).</li>
+                <li><strong>Premium:</strong> abonelik durumu (RevenueCat üzerinden; ödeme bilgileriniz doğrudan Apple veya Google tarafından işlenir).</li>
+                <li><strong>Cihaz ve kullanım:</strong> bildirim izinleri, uygulama tercihleri (tema, hatırlatıcı saatleri); ücretsiz sürümde reklam kimliği (Google AdMob).</li>
+            </ul>
+
+            <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">3. Verileri Neden Kullanıyoruz</h2>
+            <ul class="list-disc pl-6 space-y-2">
+                <li>Hesabınızı oluşturmak ve oturum açmanızı sağlamak</li>
+                <li>Hamilelik ve bebek takip özelliklerini sunmak</li>
+                <li>Hatırlatıcı bildirimleri göndermek (izin verdiğinizde)</li>
+                <li>Premium abonelik ve aile erişimini yönetmek</li>
+                <li>Ücretsiz planda reklam göstermek</li>
+                <li>Uygulamayı geliştirmek ve hataları gidermek</li>
+            </ul>
+
+            <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">4. Üçüncü Taraf Hizmetler</h2>
+            <ul class="list-disc pl-6 space-y-2">
+                <li><strong>Supabase</strong> — kimlik doğrulama, veritabanı ve dosya depolama</li>
+                <li><strong>RevenueCat</strong> — abonelik yönetimi</li>
+                <li><strong>Google AdMob</strong> — reklamlar (Premium kullanıcılar reklam görmez)</li>
+                <li><strong>Apple App Store / Google Play</strong> — uygulama dağıtımı ve uygulama içi satın alma</li>
+            </ul>
+
+            <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">5. Veri Saklama ve Güvenlik</h2>
+            <p>Verileriniz Supabase altyapısında şifreli bağlantı (HTTPS) ile iletilir ve hesabınıza bağlı olarak saklanır. Erişim, satır düzeyinde güvenlik (RLS) ile kısıtlanır; yalnızca siz ve yetkilendirdiğiniz bakıcılar verilerinize erişebilir.</p>
+
+            <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">6. Haklarınız ve Hesap Silme Talebi (Account Deletion)</h2>
+            <p>Kullanıcılarımızın veri gizliliğine ve kontrolüne büyük önem veriyoruz. Hesabınızı ve ilişkili tüm verilerinizi silmek için aşağıdaki iki yöntemden birini kullanabilirsiniz:</p>
+            
+            <h3 class="text-xl font-bold mt-4">1. Uygulama İçinden Silme:</h3>
+            <ul class="list-disc pl-6 space-y-2">
+                <li>Uygulamaya giriş yapın.</li>
+                <li>Ayarlar (Settings) menüsüne gidin.</li>
+                <li>"Hesabımı Sil" (Delete Account) seçeneğine dokunun ve onaylayın.</li>
+                <li>Bu işlem, profil bilgilerinizi, çocuk kayıtlarınızı ve tüm verilerinizi sunucularımızdan (Supabase) kalıcı olarak ve anında siler.</li>
+            </ul>
+
+            <h3 class="text-xl font-bold mt-4">2. E-posta Yoluyla Silme Talebi:</h3>
+            <ul class="list-disc pl-6 space-y-2">
+                <li>Bize <strong>btopcu@hotmail.com.tr</strong> adresinden, hesabınıza kayıtlı e-posta adresini kullanarak bir e-posta gönderin.</li>
+                <li>Konu kısmına "Hesap Silme Talebi - Nova" yazın.</li>
+                <li>Talebiniz bize ulaştıktan sonra, verileriniz en geç 7 iş günü içinde kalıcı olarak silinecektir.</li>
+            </ul>
+
+            <p class="mt-4"><strong>Veri Saklama:</strong> Hesabınız silindiğinde tüm kişisel verileriniz (medya dosyaları, büyüme kayıtları, topluluk gönderileri vb.) geri döndürülemeyecek şekilde veri tabanlarımızdan (Supabase) kaldırılır. (Yasal olarak saklanması zorunlu olan fatura/abonelik kayıtları hariç).</p>
+        </div>
+    </div>
+
+    <footer class="bg-slate-900 text-slate-300 py-8 text-center mt-12">
+        <p>&copy; 2026 Nova App. Tüm hakları saklıdır.</p>
+    </footer>
+
+</body>
+</html>

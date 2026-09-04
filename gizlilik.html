@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nova — Gizlilik Politikası</title>
+  <link rel="alternate" hreflang="en" href="privacy.html">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #faf8fc;
+      --card: #ffffff;
+      --text: #1a1625;
+      --muted: #5c5470;
+      --accent: #7c4dff;
+      --border: #e8e0f0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121018;
+        --card: #1c1824;
+        --text: #f3eef8;
+        --muted: #b8afc8;
+        --accent: #b388ff;
+        --border: #2e2840;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    header {
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 24px;
+    }
+    header a { color: var(--accent); text-decoration: none; font-size: 0.9rem; }
+    header h1 { margin: 8px 0 0; font-size: 1.5rem; }
+    header p { margin: 4px 0 0; color: var(--muted); font-size: 0.9rem; }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 24px 64px;
+    }
+    h2 {
+      font-size: 1.15rem;
+      margin: 2rem 0 0.75rem;
+      color: var(--accent);
+    }
+    p, li { color: var(--text); }
+    li { margin-bottom: 0.35rem; }
+    ul { padding-left: 1.25rem; }
+    .notice {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 18px;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">← Nova</a>
+    <h1>Gizlilik Politikası</h1>
+    <p>Son güncelleme: 18 Haziran 2026</p>
+  </header>
+  <main>
+    <p>
+      Nova (“uygulama”), hamilelik ve bebek takibi sunan bir mobil uygulamadır.
+      Bu politika, hangi verileri topladığımızı, nasıl kullandığımızı ve haklarınızı açıklar.
+    </p>
+
+    <div class="notice">
+      <strong>Önemli:</strong> Nova tıbbi cihaz veya sağlık hizmeti sağlayıcısı değildir.
+      Uygulamadaki bilgiler yalnızca bilgilendirme amaçlıdır; sağlık kararlarınız için
+      mutlaka doktorunuza danışın.
+    </div>
+
+    <h2>1. Veri sorumlusu</h2>
+    <p>
+      Nova uygulamasının geliştiricisi veri sorumlusudur.
+      Gizlilik talepleri için: <a href="mailto:btopcu@hotmail.com.tr">btopcu@hotmail.com.tr</a>
+    </p>
+
+    <h2>2. Topladığımız veriler</h2>
+    <ul>
+      <li><strong>Hesap bilgileri:</strong> e-posta adresi, şifre (Supabase Auth tarafından güvenli şekilde işlenir), tercih edilen dil.</li>
+      <li><strong>Profil:</strong> adınız, ebeveyn rolü (anne/baba/bakıcı).</li>
+      <li><strong>Çocuk profilleri:</strong> bebek veya hamilelik adı, cinsiyet, tahmini doğum tarihi, doğum tarihi, doğum hikayesi notları ve ölçüleri.</li>
+      <li><strong>Sağlık ve bakım kayıtları:</strong> hamilelik takibi (kilo, randevu, ultrason vb.), bebek bakım logları, büyüme, aşı, ilaç hatırlatıcıları, hastalık günlüğü, diş takibi, kilometre taşları.</li>
+      <li><strong>Medya:</strong> yüklediğiniz fotoğraf ve videolar (anılar, ultrason, profil fotoğrafı).</li>
+      <li><strong>Aile erişimi:</strong> paylaştığınız erişim kodları ve bakıcı oturum bilgileri.</li>
+      <li><strong>Topluluk:</strong> paylaştığınız gönderiler ve yorumlar (bu özelliği kullanırsanız).</li>
+      <li><strong>Premium:</strong> abonelik durumu (RevenueCat üzerinden; ödeme bilgileriniz doğrudan Apple veya Google tarafından işlenir).</li>
+      <li><strong>Cihaz ve kullanım:</strong> bildirim izinleri, uygulama tercihleri (tema, hatırlatıcı saatleri); ücretsiz sürümde reklam kimliği (Google AdMob).</li>
+    </ul>
+
+    <h2>3. Verileri neden kullanıyoruz</h2>
+    <ul>
+      <li>Hesabınızı oluşturmak ve oturum açmanızı sağlamak</li>
+      <li>Hamilelik ve bebek takip özelliklerini sunmak</li>
+      <li>Hatırlatıcı bildirimleri göndermek (izin verdiğinizde)</li>
+      <li>Premium abonelik ve aile erişimini yönetmek</li>
+      <li>Ücretsiz planda reklam göstermek</li>
+      <li>Uygulamayı geliştirmek ve hataları gidermek</li>
+    </ul>
+
+    <h2>4. Üçüncü taraf hizmetler</h2>
+    <ul>
+      <li><strong>Supabase</strong> — kimlik doğrulama, veritabanı ve dosya depolama (AB/ABD sunucuları; <a href="https://supabase.com/privacy">supabase.com/privacy</a>)</li>
+      <li><strong>RevenueCat</strong> — abonelik yönetimi (<a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>)</li>
+      <li><strong>Google AdMob</strong> — reklamlar (Premium kullanıcılar reklam görmez; <a href="https://policies.google.com/privacy">Google Gizlilik</a>)</li>
+      <li><strong>Apple App Store / Google Play</strong> — uygulama dağıtımı ve uygulama içi satın alma</li>
+    </ul>
+
+    <h2>5. Veri saklama ve güvenlik</h2>
+    <p>
+      Verileriniz Supabase altyapısında şifreli bağlantı (HTTPS) ile iletilir ve
+      hesabınıza bağlı olarak saklanır. Erişim, satır düzeyinde güvenlik (RLS) ile
+      kısıtlanır; yalnızca siz ve yetkilendirdiğiniz bakıcılar verilerinize erişebilir.
+    </p>
+
+    <h2>6. Saklama süresi</h2>
+    <p>
+      Verileriniz hesabınız aktif olduğu sürece saklanır. Hesabınızı veya bir çocuk
+      profilini sildiğinizde ilgili kayıtlar sunucudan kaldırılır (yasal zorunluluklar hariç).
+    </p>
+
+    <h2>7. Haklarınız</h2>
+    <ul>
+      <li>Verilerinize erişme ve düzeltme (uygulama içinden profil düzenleme)</li>
+      <li>Çocuk profili silme (Ayarlar → profil düzenle → Profili sil)</li>
+      <li>Hesap silme (Ayarlar → Hesabı sil) — tüm verileriniz kalıcı olarak silinir</li>
+      <li>Bildirimleri kapatma (cihaz ayarları ve uygulama hatırlatıcı ayarları)</li>
+      <li>Bize e-posta ile ulaşarak ek taleplerde bulunma</li>
+    </ul>
+
+    <h2>8. Çocukların gizliliği</h2>
+    <p>
+      Nova, ebeveynlerin kendi bebekleri hakkında bilgi girmesi içindir.
+      Uygulama 13 yaş altı çocuklara yönelik bağımsız bir hizmet değildir;
+      hesap yalnızca yetişkin ebeveyn veya bakıcı tarafından oluşturulmalıdır.
+    </p>
+
+    <h2>9. Uluslararası aktarım</h2>
+    <p>
+      Verileriniz, seçtiğiniz bulut sağlayıcısının sunucu bölgelerinde işlenebilir.
+      Hizmeti kullanarak bu aktarımı kabul etmiş sayılırsınız.
+    </p>
+
+    <h2>10. Politika değişiklikleri</h2>
+    <p>
+      Bu metni güncelleyebiliriz. Önemli değişikliklerde uygulama içi bildirim veya
+      bu sayfadaki güncelleme tarihi yoluyla bilgilendirme yapılır.
+    </p>
+
+    <h2>11. İletişim</h2>
+    <p>
+      Sorularınız için: <a href="mailto:btopcu@hotmail.com.tr">btopcu@hotmail.com.tr</a>
+    </p>
+
+    <footer>
+      <a href="privacy.html">English version</a> ·
+      <a href="https://github.com/topcu53/Nova">GitHub</a>
+    </footer>
+  </main>
+</body>
+</html>
