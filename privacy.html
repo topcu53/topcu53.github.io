@@ -5,21 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nova - Gizlilik Politikası</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#E8879B',
+                            dark: '#C96B82',
+                            light: '#FFF8F5',
+                            text: '#2D2428',
+                            blue: '#7EB8DA',
+                            accent: '#F5C6A5'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800">
+<body class="bg-brand-light text-brand-text">
 
     <nav class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
                 <div class="flex-shrink-0 flex items-center">
-                    <a href="index.html" class="text-2xl font-bold text-indigo-600">Nova</a>
+                    <a href="index.html" class="text-2xl font-bold text-brand">Nova</a>
                 </div>
                 <div class="hidden md:flex space-x-8">
-                    <a href="index.html" class="text-slate-600 hover:text-indigo-600 font-medium">Ana Sayfa</a>
+                    <a href="index.html" class="text-slate-600 hover:text-brand font-medium">Ana Sayfa</a>
                 </div>
             </div>
         </div>
@@ -35,10 +53,10 @@
                 <strong>Önemli:</strong> Nova tıbbi cihaz veya sağlık hizmeti sağlayıcısı değildir. Uygulamadaki bilgiler yalnızca bilgilendirme amaçlıdır; sağlık kararlarınız için mutlaka doktorunuza danışın.
             </p>
 
-            <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">1. Veri Sorumlusu</h2>
-            <p>Nova uygulamasının geliştiricisi veri sorumlusudur.<br>Gizlilik talepleri için: btopcu@hotmail.com.tr</p>
+            <h2 class="text-2xl font-bold text-brand-text mt-8 mb-4">1. Veri Sorumlusu</h2>
+            <p>Nova uygulamasının geliştiricisi veri sorumlusudur.<br>Gizlilik talepleri için: btopcu14@gmail.com</p>
 
-            <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">2. Topladığımız Veriler</h2>
+            <h2 class="text-2xl font-bold text-brand-text mt-8 mb-4">2. Topladığımız Veriler</h2>
             <ul class="list-disc pl-6 space-y-2">
                 <li><strong>Hesap bilgileri:</strong> e-posta adresi, şifre (Supabase Auth tarafından güvenli şekilde işlenir), tercih edilen dil.</li>
                 <li><strong>Profil:</strong> adınız, ebeveyn rolü (anne/baba/bakıcı).</li>
@@ -51,7 +69,7 @@
                 <li><strong>Cihaz ve kullanım:</strong> bildirim izinleri, uygulama tercihleri (tema, hatırlatıcı saatleri); ücretsiz sürümde reklam kimliği (Google AdMob).</li>
             </ul>
 
-            <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">3. Verileri Neden Kullanıyoruz</h2>
+            <h2 class="text-2xl font-bold text-brand-text mt-8 mb-4">3. Verileri Neden Kullanıyoruz</h2>
             <ul class="list-disc pl-6 space-y-2">
                 <li>Hesabınızı oluşturmak ve oturum açmanızı sağlamak</li>
                 <li>Hamilelik ve bebek takip özelliklerini sunmak</li>
@@ -61,7 +79,7 @@
                 <li>Uygulamayı geliştirmek ve hataları gidermek</li>
             </ul>
 
-            <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">4. Üçüncü Taraf Hizmetler</h2>
+            <h2 class="text-2xl font-bold text-brand-text mt-8 mb-4">4. Üçüncü Taraf Hizmetler</h2>
             <ul class="list-disc pl-6 space-y-2">
                 <li><strong>Supabase</strong> — kimlik doğrulama, veritabanı ve dosya depolama</li>
                 <li><strong>RevenueCat</strong> — abonelik yönetimi</li>
@@ -69,10 +87,10 @@
                 <li><strong>Apple App Store / Google Play</strong> — uygulama dağıtımı ve uygulama içi satın alma</li>
             </ul>
 
-            <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">5. Veri Saklama ve Güvenlik</h2>
+            <h2 class="text-2xl font-bold text-brand-text mt-8 mb-4">5. Veri Saklama ve Güvenlik</h2>
             <p>Verileriniz Supabase altyapısında şifreli bağlantı (HTTPS) ile iletilir ve hesabınıza bağlı olarak saklanır. Erişim, satır düzeyinde güvenlik (RLS) ile kısıtlanır; yalnızca siz ve yetkilendirdiğiniz bakıcılar verilerinize erişebilir.</p>
 
-            <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4">6. Haklarınız ve Hesap Silme Talebi (Account Deletion)</h2>
+            <h2 class="text-2xl font-bold text-brand-text mt-8 mb-4">6. Haklarınız ve Hesap Silme Talebi (Account Deletion)</h2>
             <p>Kullanıcılarımızın veri gizliliğine ve kontrolüne büyük önem veriyoruz. Hesabınızı ve ilişkili tüm verilerinizi silmek için aşağıdaki iki yöntemden birini kullanabilirsiniz:</p>
             
             <h3 class="text-xl font-bold mt-4">1. Uygulama İçinden Silme:</h3>
@@ -85,7 +103,7 @@
 
             <h3 class="text-xl font-bold mt-4">2. E-posta Yoluyla Silme Talebi:</h3>
             <ul class="list-disc pl-6 space-y-2">
-                <li>Bize <strong>btopcu@hotmail.com.tr</strong> adresinden, hesabınıza kayıtlı e-posta adresini kullanarak bir e-posta gönderin.</li>
+                <li>Bize <strong>btopcu14@gmail.com</strong> adresinden, hesabınıza kayıtlı e-posta adresini kullanarak bir e-posta gönderin.</li>
                 <li>Konu kısmına "Hesap Silme Talebi - Nova" yazın.</li>
                 <li>Talebiniz bize ulaştıktan sonra, verileriniz en geç 7 iş günü içinde kalıcı olarak silinecektir.</li>
             </ul>
@@ -94,7 +112,7 @@
         </div>
     </div>
 
-    <footer class="bg-slate-900 text-slate-300 py-8 text-center mt-12">
+    <footer class="bg-brand-text text-brand-light py-8 text-center mt-12 text-sm opacity-75">
         <p>&copy; 2026 Nova App. Tüm hakları saklıdır.</p>
     </footer>
 
