@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova - Privacy Policy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#E8879B',
+                            dark: '#C96B82',
+                            light: '#FFF8F5',
+                            text: '#2D2428',
+                            blue: '#7EB8DA',
+                            accent: '#F5C6A5'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-brand-light text-brand-text">
+
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index-en.html" class="text-2xl font-bold text-brand">Nova</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index-en.html" class="text-slate-600 hover:text-brand font-medium">Home</a>
+                    <a href="privacy.html" class="ml-4 text-slate-500 hover:text-brand font-bold border-l pl-4 border-slate-200">🇹🇷 TR</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <h1 class="text-4xl font-bold mb-4">Nova — Privacy Policy</h1>
+        <p class="text-slate-500 mb-8">Last updated: June 18, 2026</p>
+
+        <div class="prose prose-slate max-w-none text-slate-700 space-y-6">
+            <p>Nova (“the app”) is a mobile application offering pregnancy and baby tracking. This policy explains what data we collect, how we use it, and your rights.</p>
+            <p class="p-4 bg-orange-50 border-l-4 border-orange-400 text-orange-800">
+                <strong>Important:</strong> Nova is not a medical device or healthcare provider. Information in the app is for informational purposes only; always consult your doctor for health decisions.
+            </p>
+
+            <h2 class="text-2xl font-bold text-brand-text mt-8 mb-4">1. Data Controller</h2>
+            <p>The developer of the Nova app is the data controller.<br>For privacy requests: btopcu14@gmail.com</p>
+
+            <h2 class="text-2xl font-bold text-brand-text mt-8 mb-4">2. Data We Collect</h2>
+            <ul class="list-disc pl-6 space-y-2">
+                <li><strong>Account details:</strong> email address, password (securely handled by Supabase Auth), preferred language.</li>
+                <li><strong>Profile:</strong> your name, parent role (mother/father/caregiver).</li>
+                <li><strong>Child profiles:</strong> baby or pregnancy name, gender, estimated due date, birth date, birth story notes, and measurements.</li>
+                <li><strong>Health and care logs:</strong> pregnancy tracking (weight, appointments, ultrasounds, etc.), baby care logs, growth, vaccinations, medication reminders, illness diary, teething, milestones.</li>
+                <li><strong>Media:</strong> photos and videos you upload (memories, ultrasounds, profile picture).</li>
+                <li><strong>Family access:</strong> shared access codes and caregiver session data.</li>
+                <li><strong>Community:</strong> posts and comments you share (if you use this feature).</li>
+                <li><strong>Premium:</strong> subscription status (via RevenueCat; payment details are processed directly by Apple or Google).</li>
+                <li><strong>Device and usage:</strong> notification permissions, app preferences (theme, reminder times); advertising ID on the free plan (Google AdMob).</li>
+            </ul>
+
+            <h2 class="text-2xl font-bold text-brand-text mt-8 mb-4">3. Why We Use Data</h2>
+            <ul class="list-disc pl-6 space-y-2">
+                <li>To create your account and allow you to log in</li>
+                <li>To provide pregnancy and baby tracking features</li>
+                <li>To send reminder notifications (when permitted)</li>
+                <li>To manage Premium subscriptions and family access</li>
+                <li>To display ads on the free plan</li>
+                <li>To improve the app and troubleshoot issues</li>
+            </ul>
+
+            <h2 class="text-2xl font-bold text-brand-text mt-8 mb-4">4. Third-Party Services</h2>
+            <ul class="list-disc pl-6 space-y-2">
+                <li><strong>Supabase</strong> — authentication, database, and file storage</li>
+                <li><strong>RevenueCat</strong> — subscription management</li>
+                <li><strong>Google AdMob</strong> — advertising (Premium users do not see ads)</li>
+                <li><strong>Apple App Store / Google Play</strong> — app distribution and in-app purchases</li>
+            </ul>
+
+            <h2 class="text-2xl font-bold text-brand-text mt-8 mb-4">5. Data Retention and Security</h2>
+            <p>Your data is transmitted via encrypted connection (HTTPS) and stored securely within the Supabase infrastructure linked to your account. Access is restricted using Row Level Security (RLS); only you and your authorized caregivers can access your data.</p>
+
+            <h2 class="text-2xl font-bold text-brand-text mt-8 mb-4">6. Your Rights and Account Deletion Request</h2>
+            <p>We prioritize the privacy and control of our users' data. You can use one of the two methods below to delete your account and all associated data:</p>
+            
+            <h3 class="text-xl font-bold mt-4">1. Deletion from Within the App:</h3>
+            <ul class="list-disc pl-6 space-y-2">
+                <li>Log in to the app.</li>
+                <li>Go to the Settings menu.</li>
+                <li>Tap on "Delete Account" and confirm.</li>
+                <li>This process instantly and permanently deletes your profile details, child records, and all data from our servers (Supabase).</li>
+            </ul>
+
+            <h3 class="text-xl font-bold mt-4">2. Deletion Request via Email:</h3>
+            <ul class="list-disc pl-6 space-y-2">
+                <li>Send us an email at <strong>btopcu14@gmail.com</strong> using the email address registered to your account.</li>
+                <li>Write "Account Deletion Request - Nova" in the subject line.</li>
+                <li>Once we receive your request, your data will be permanently deleted within 7 business days.</li>
+            </ul>
+
+            <p class="mt-4"><strong>Data Retention:</strong> When your account is deleted, all personal data (media files, growth records, community posts, etc.) is irreversibly removed from our databases (Supabase). (Except for billing/subscription records that are legally required to be retained).</p>
+        </div>
+    </div>
+
+    <footer class="bg-brand-text text-brand-light py-8 text-center mt-12 text-sm opacity-75">
+        <p>&copy; 2026 Nova App. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
